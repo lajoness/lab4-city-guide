@@ -18,16 +18,20 @@
             android:layout_width="0px"
             android:layout_height="fill_parent"
             android:layout_weight="0.5"
+            android:backgroundTint="#bcaaa4"
             android:text="@string/events"
-            android:backgroundTint="#bcaaa4"/>
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/placesButton"
             android:layout_width="0px"
             android:layout_height="fill_parent"
             android:layout_weight="0.5"
+            android:backgroundTint="#efdcd5"
             android:text="@string/places"
-            android:backgroundTint="#efdcd5"/>
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -42,8 +46,10 @@
             android:layout_width="0dip"
             android:layout_height="fill_parent"
             android:layout_weight="0.5"
+            android:backgroundTint="#efdcd5"
             android:text="@string/tours"
-            android:backgroundTint="#efdcd5"/>
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/accButton"
@@ -51,6 +57,8 @@
             android:layout_height="fill_parent"
             android:layout_weight="0.5"
             android:backgroundTint="#bcaaa4"
-            android:text="@string/acc" />
+            android:text="@string/acc"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
     </LinearLayout>
 </LinearLayout>

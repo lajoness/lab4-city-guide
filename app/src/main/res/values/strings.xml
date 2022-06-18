@@ -7,36 +7,36 @@
     <string name="tours">GUIDED TOURS</string>
 
     <!--PLACES-->
-    <!-- -->
+    <!--Hala Stulecia-->
     <string name="place1Name"></string>
     <string name="place1Description"></string>
-    <!-- -->
+    <!--Rynek-->
     <string name="place2Name"></string>
     <string name="place2Description"></string>
-    <!-- -->
+    <!--Sky Tower-->
     <string name="place3Name"></string>
     <string name="place3Description"></string>
-    <!-- -->
+    <!--Ogród Botaniczny-->
     <string name="place4Name"></string>
     <string name="place4Description"></string>
-    <!-- -->
+    <!--Ostrów Tumski-->
     <string name="place5Name"></string>
     <string name="place5Description"></string>
 
     <!--EVENTS-->
     <!--St. John’s Fair-->
     <string name="event1Name">St. John’s Fair</string>
-    <string name="event1Description">From 20.05.2022 to 27.06.2022 \n\n
+    <string name="event1Description"><b>\tFrom 20.05.2022 to 27.06.2022</b> \n\n
         \t St. John’s Fair will be held on the Wroclaw Market Square in the area around the Pillory, Oławska street from Szewska street to the Market Square and Świdnicka street from the underpass to the Market Square.
         What’s in the assortment? Industrial products, handiwork and craft – home-made artistic products and regional food products.</string>
     <!--Miracle-Workers-->
     <string name="event2Name">Miracle Workers</string>
-    <string name="event2Description">Everlasting event \n\n
+    <string name="event2Description"><b>\tEverlasting event</b> \n\n
         \t Miracle-Workers: Craft and decorative art – Eastern art – Modern pottery and glass is a permanent exhibition prepared to honour the 70th anniversary of the National Museum in Wroclaw.
         The exhibition presents three collections: the art of the Middle East and Far East, artistic craft and material culture, and pottery and modern artistic glass.</string>
     <!--Multimedia Fountain Shows-->
     <string name="event3Name">Multimedia Fountain Shows</string>
-    <string name="event3Description">From 15.05.2022 to 16.10.2022 \n\n
+    <string name="event3Description"><b>\tFrom 15.05.2022 to 16.10.2022</b> \n\n
         \t One of Wroclaw’s biggest attractions has returned after the winter break. On 15th May, the modernised Wroclaw Multimedia Fountain started a new season in a full multimedia version. This year’s show will also be enriched with a new special display.
         Special displays will take place on Fridays and Saturdays in accordance with the schedule available on halastulecia.pl. The summer show will soon be enriched with a completely new display – details will be announced soon.</string>
 

@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent listIntent = new Intent(getApplicationContext(), ListActivity.class);
-                listIntent.putExtra("type", R.string.events);
+                listIntent.putExtra("type", getString(R.string.events));
                 startActivity(listIntent);
             }
         });
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent listIntent = new Intent(getApplicationContext(), ListActivity.class);
-                listIntent.putExtra("type", R.string.places);
+                listIntent.putExtra("type", getString(R.string.places));
                 startActivity(listIntent);
             }
         });
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent listIntent = new Intent(getApplicationContext(), ListActivity.class);
-                listIntent.putExtra("type", R.string.tours);
+                listIntent.putExtra("type", getString(R.string.tours));
                 startActivity(listIntent);
             }
         });
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent listIntent = new Intent(getApplicationContext(), ListActivity.class);
-                listIntent.putExtra("type", R.string.acc);
+                listIntent.putExtra("type", getString(R.string.acc));
                 startActivity(listIntent);
             }
         });
