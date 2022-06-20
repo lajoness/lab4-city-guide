@@ -8,19 +8,20 @@
 
     <!--PLACES-->
     <!--Hala Stulecia-->
-    <string name="place1Name"></string>
-    <string name="place1Description"></string>
+    <string name="place1Name">Centennial Hall</string>
+    <string name="place1Description">\t Centennial Hall is a historic building in Wrocław, Poland. As an early landmark of reinforced concrete architecture, the building became one of Poland\'s official national Historic Monuments (Pomnik historii),
+        as designated 20 April 2005, together with the Four Domes Pavilion, the Pergola, and the Iglica. Its listing is maintained by the National Heritage Board of Poland. It was also listed as a UNESCO World Heritage Site in 2006. </string>
     <!--Rynek-->
-    <string name="place2Name"></string>
+    <string name="place2Name">Square Market</string>
     <string name="place2Description"></string>
     <!--Sky Tower-->
-    <string name="place3Name"></string>
+    <string name="place3Name">Sky Tower</string>
     <string name="place3Description"></string>
     <!--Ogród Botaniczny-->
-    <string name="place4Name"></string>
+    <string name="place4Name">Botanical Garden</string>
     <string name="place4Description"></string>
     <!--Ostrów Tumski-->
-    <string name="place5Name"></string>
+    <string name="place5Name">Ostrów Tumski</string>
     <string name="place5Description"></string>
 
     <!--EVENTS-->
