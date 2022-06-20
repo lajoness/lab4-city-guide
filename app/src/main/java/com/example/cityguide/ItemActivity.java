@@ -3,15 +3,11 @@ package com.example.cityguide;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.speech.tts.TextToSpeech;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.MediaController;
-import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.VideoView;
 
@@ -22,8 +18,6 @@ import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-
-import java.util.Locale;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -91,14 +85,10 @@ public class ItemActivity extends AppCompatActivity {//implements OnMapReadyCall
             int vidID = getResources().getIdentifier(itemID + "_vid", "raw", getPackageName());
             Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + vidID);
 
-            System.out.println(uri.toString());
-
             videoView.setMediaController(mediaController);
             videoView.setVideoURI(uri);
             videoView.requestFocus();
             videoView.start();
-
-
         }
 
     }
