@@ -13,56 +13,35 @@ import android.widget.VideoView;
 
 import java.util.Locale;
 
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapView;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ItemActivity extends AppCompatActivity {//implements OnMapReadyCallback {
+public class ItemActivity extends AppCompatActivity {
 
-    private String itemName;
-    private String description;
-    private MapView mMapView;
+    private Item item;
     private TextToSpeech textToSpeech;
     private VideoView videoView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_event);
-        TextView eventNameTV = findViewById(R.id.eventNameTV);
+        setContentView(R.layout.activity_item);
+        TextView itemNameTV = findViewById(R.id.itemNameTV);
         TextView descriptionTV = findViewById(R.id.descriptionTV);
         ImageView imageView = findViewById(R.id.imageView);
         ImageView imageView2 = findViewById(R.id.imageView2);
         ImageView imageView3 = findViewById(R.id.imageView3);
 
-        // Get proper data from resources
         String itemID = getIntent().getStringExtra("id");
-        int itemNameID = getResources().getIdentifier(itemID + "Name", "string" , getPackageName());
-        int itemDescriptionID = getResources().getIdentifier(itemID + "Description", "string" , getPackageName());
-        int ivID = getResources().getIdentifier(itemID + "a", "drawable", getPackageName());
-        int iv2ID = getResources().getIdentifier(itemID + "b", "drawable", getPackageName());
-        int iv3ID = getResources().getIdentifier(itemID + "c", "drawable", getPackageName());
-
-        itemName = getString(itemNameID);
-        description = getString(itemDescriptionID);
+        item = new Item(this, itemID);
 
         // Set views with data
-        eventNameTV.setText(itemName);
-        descriptionTV.setText(description);
-        imageView.setImageResource(ivID);
-        imageView2.setImageResource(iv2ID);
-        imageView3.setImageResource(iv3ID);
-
-        //mMapView = (MapView) findViewById(R.id.mapView);
-        //mMapView.onCreate(savedInstanceState);
-        //mMapView.getMapAsync(this);
+        itemNameTV.setText(item.getItemName());
+        descriptionTV.setText(item.getDescription());
+        imageView.setImageResource(item.getImageID1());
+        imageView2.setImageResource(item.getImageID2());
+        imageView3.setImageResource(item.getImageID3());
 
         if (itemID.contains("place")){
 
@@ -82,9 +61,9 @@ public class ItemActivity extends AppCompatActivity {//implements OnMapReadyCall
             MediaController mediaController= new MediaController(this);
             mediaController.setAnchorView(videoView);
 
-            int vidID = getResources().getIdentifier(itemID + "_vid", "raw", getPackageName());
-            Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + vidID);
+            Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + item.getVideoID());
 
+            videoView.setVisibility(View.VISIBLE);
             videoView.setMediaController(mediaController);
             videoView.setVideoURI(uri);
             videoView.requestFocus();
@@ -95,31 +74,30 @@ public class ItemActivity extends AppCompatActivity {//implements OnMapReadyCall
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void TextToSpeechButton(View view){
-        textToSpeech.speak(description, TextToSpeech.QUEUE_FLUSH, null,null);
+        textToSpeech.speak(item.getDescription(), TextToSpeech.QUEUE_FLUSH, null,null);
     }
 
     @Override
     public void onPause() {
         super.onPause();
 
-        textToSpeech.shutdown();
-        videoView.pause();
+        if (textToSpeech!=null) {
+            textToSpeech.shutdown();
+        }
+        if (videoView!=null) {
+            videoView.stopPlayback();
+        }
     }
 
     @Override
     public void onStop() {
         super.onStop();
 
-        textToSpeech.shutdown();
+        if (textToSpeech!=null) {
+            textToSpeech.shutdown();
+        }
         if (videoView!=null) {
             videoView.stopPlayback();
         }
     }
-
-/*    @Override
-    public void onMapReady(GoogleMap map) {
-
-        // 51.109126, 17.032759
-        map.addMarker(new MarkerOptions().position(new LatLng(51.109126, 17.032759)).title("Marker"));
-    }*/
 }

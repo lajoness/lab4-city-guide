@@ -21,16 +21,16 @@ public class ListActivity extends AppCompatActivity {
 
     ArrayList<String> itemList = new ArrayList<String>();
     Map<String, String> classMap;
-    String type;
+    String itemType;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view);
 
-        this.type = getIntent().getStringExtra("type");
+        this.itemType = getIntent().getStringExtra("type");
         setClassMap();
-        setItemList(this.type);
+        setItemList(this.itemType);
     }
 
     @Override
@@ -40,7 +40,7 @@ public class ListActivity extends AppCompatActivity {
         TextView listNameTV = findViewById(R.id.listNameTV);
         ListView listView = findViewById(R.id.listView);
 
-        listNameTV.setText(this.type);
+        listNameTV.setText(this.itemType);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.item_view, itemList);
         listView.setAdapter(adapter);
 
@@ -49,9 +49,19 @@ public class ListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Intent itemIntent = new Intent(getApplicationContext(), ItemActivity.class);
-                itemIntent.putExtra("id", classMap.get(type) + (position + 1));
-                startActivity(itemIntent);
+                Intent intent;
+
+                if (classMap.get(itemType) == "tour"){
+
+                    intent = new Intent(getApplicationContext(), TourActivity.class);
+                }
+                else {
+
+                    intent = new Intent(getApplicationContext(), ItemActivity.class);
+                }
+
+                intent.putExtra("id", classMap.get(itemType) + (position + 1));
+                startActivity(intent);
             }
         });
 
@@ -86,5 +96,4 @@ public class ListActivity extends AppCompatActivity {
             put(getString(R.string.tours), "tour");
         }};
     }
-
 }

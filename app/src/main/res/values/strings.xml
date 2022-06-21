@@ -9,20 +9,24 @@
     <!--PLACES-->
     <!--Hala Stulecia-->
     <string name="place1Name">Centennial Hall</string>
-    <string name="place1Description">\t Centennial Hall is a historic building in Wrocław, Poland. As an early landmark of reinforced concrete architecture, the building became one of Poland\'s official national Historic Monuments (Pomnik historii),
+    <string name="place1Description">\tCentennial Hall is a historic building in Wrocław, Poland. As an early landmark of reinforced concrete architecture, the building became one of Poland\'s official national Historic Monuments (Pomnik historii),
         as designated 20 April 2005, together with the Four Domes Pavilion, the Pergola, and the Iglica. Its listing is maintained by the National Heritage Board of Poland. It was also listed as a UNESCO World Heritage Site in 2006. </string>
     <!--Rynek-->
-    <string name="place2Name">Square Market</string>
-    <string name="place2Description"></string>
+    <string name="place2Name">Square Market (Rynek)</string>
+    <string name="place2Description">\t Rynek is a medieval market square in Wrocław, now the central part of the pedestrian zone. One of the largest old town markets in Europe, with the largest town halls in Poland.
+        The Wrocław market, according to Olgierd Czerner, covers the entire area of the square with all architectural elements located in its area and the buildings surrounding the square on all four sides.</string>
     <!--Sky Tower-->
     <string name="place3Name">Sky Tower</string>
-    <string name="place3Description"></string>
+    <string name="place3Description">\tSky Tower is a skyscraper. Construction began in December 2007 with the demolition of the 24-story Poltegor structure, until then the tallest building in the city. Sky Tower was the tallest building in Poland in the category of
+        height to roof and category of highest floor until Varso Tower overtook it in mid-2020. A publicly accessible viewpoint is located on the 49th floor. </string>
     <!--Ogród Botaniczny-->
     <string name="place4Name">Botanical Garden</string>
-    <string name="place4Description"></string>
+    <string name="place4Description">\tThe Botanical Garden of the University of Wrocław is a botanical garden in Wrocław founded in 1811 in the area of Ostrów Tumski.
+        It is the second oldest garden of this type in Poland, after the garden in Kraków. In 1974 it was listed as a protected monument in Lower Silesia, since 1994 it was included in the protected historical city center.</string>
     <!--Ostrów Tumski-->
     <string name="place5Name">Ostrów Tumski</string>
-    <string name="place5Description"></string>
+    <string name="place5Description">\tOstrów Tumski is the oldest part of the city of Wrocław in south-western Poland. It was formerly an island (ostrów in Old Polish language) between branches of the Oder River.
+        Streets and alleys of Ostrów Tumski are illuminated by over 100 gas lanterns. Every day they are lit and extinguished by a lighthouse keeper, who can be found just before dusk and at dawn.</string>
 
     <!--EVENTS-->
     <!--St. John’s Fair-->
@@ -43,23 +47,28 @@
 
     <!--ACCOMMODATION-->
     <!-- -->
-    <string name="acc1Name"></string>
-    <string name="acc1Description"></string>
+    <string name="acc1Name">Bemma Apart Hostel</string>
+    <string name="acc1Description">\tObiekt Bemma Apart Hostel położony jest we Wrocławiu, 400 metrow od krasnala Życzliwka. Obiekt znajduje się w pobliżu ratusza i około 400 metrow od wrocławskiego Rynku. Galeria Dominikańska jest oddalona od obiektu o 600 metrow.
+        Ostrów Tumski oddalony jest od obiektu Bemma Apart Hostel o 600 metrow, Panorama Racławicka jest zlokalizowana w odległości 700 metrow. Odległość od lotniska Wrocław-Strachowice wynosi 11 km.</string>
     <!-- -->
-    <string name="acc2Name"></string>
-    <string name="acc2Description"></string>
+    <string name="acc2Name">Hotel Piast Wrocław Centrum</string>
+    <string name="acc2Description">\tThe 2-star Hotel Piast Wrocław Centrum offers a view of the historic Wrocław Main Railway Station. It offers air-conditioned rooms with free WiFi. The Old Town is a 20-minute walk away.
+        Rooms feature a flat-screen TV and a desk. Each has a private bathroom with a shower and a hairdryer. It offers a city view. Bed linen and towels are provided.</string>
     <!-- -->
-    <string name="acc3Name"></string>
-    <string name="acc3Description"></string>
+    <string name="acc3Name">HP Park Plaza</string>
+    <string name="acc3Description">\tHP Park Plaza is a 4-star hotel located on the Oder River, 700 meters from the Wrocław Cathedral. It offers spacious, air-conditioned rooms with underfloor heating, satellite TV and free internet.</string>
 
     <!--TOURS-->
     <!-- -->
-    <string name="tour1Name"></string>
-    <string name="tour1Description"></string>
+    <string name="tour1Name">Quick tour</string>
+    <string name="tour1Description">\tThis tour includes two of the known turistic spots in Wrocław. First, you will visit the most famous architectural treasures of the city
+        - the Centennial Hall - and afterwards, you will be able to enter the mesmerising Botanical Garden.</string>
     <!-- -->
-    <string name="tour2Name"></string>
-    <string name="tour2Description"></string>
+    <string name="tour2Name">Full day tour</string>
+    <string name="tour2Description">\tClear you schedule for the day because this tour has it all! The trip will start with a visit to the Centennial Hall and a nearby Botanical Garden.
+        Then, you will be taken to Sky Tower to admire the view of the whole city. Lastly, the tour will finish with a walk around Ostrów Tumski and the Square Market.</string>
     <!-- -->
-    <string name="tour3Name"></string>
-    <string name="tour3Description"></string>
+    <string name="tour3Name">Old town tour</string>
+    <string name="tour3Description">\tOn this tour you will see the old parts of Wrocław, located in the center of the city. The tour will start in the Square Market, where you will see the beautiful buildings around it and also the first dwarf statue.
+        Then, you will be taken to Ostrów Tumski so that you could admire the view on the river during the sunset. </string>
 </resources>
